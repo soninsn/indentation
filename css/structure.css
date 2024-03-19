@@ -1,0 +1,36 @@
+.box {
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    max-width: 1140px;
+    padding: 0 0px;
+    margin: 0 auto;
+}
+
+.structure {
+    margin-bottom: 48px;
+} 
+
+.structure__subtitle {
+    display: inline-block;
+    font-size: 44px;
+    font-weight: 700;
+    padding: 23px 0px 0px 75px;
+}
+
+.structure__list {
+    padding-left: 100px;
+    padding-bottom: 25px;
+    color: #02535f;
+}
+
+.structure__link {
+    text-decoration-color: #000;
+}
+
+.structure__item {
+    margin-bottom: 10px;
+}
+
+.structure__item:last-child {
+    margin-bottom: 0;
+}

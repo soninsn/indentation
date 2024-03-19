@@ -1,0 +1,26 @@
+@import url(normalize.css);
+@import url(global.css);
+@import url(intro.css);
+@import url(structure.css);
+@import url(rule-1.css);
+@import url(rule-2.css);
+@import url(rule-3.css);
+@import url(result.css);
+
+@font-face {
+    font-family: Roboto;
+    src: local("Roboto"), url(../fonts/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local("Roboto"), url(../fonts/Roboto-Black.ttf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local("Roboto"), url(../fonts/Roboto-Bold.ttf);
+    font-weight: 700;
+}

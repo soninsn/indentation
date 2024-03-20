@@ -10,202 +10,205 @@
   <title>Identation</title>
 </head>
 <body>
-  <article>
-    <section class="intro">
-      <div class="container">
-        <h1 class="intro__title">Отступы в вёрстке: margin и padding</h1>
-        <p class="intro__text">
-          В этой статье я рассмотрю самые популярные "стандартные" решения для сохранения смысла и хорошей читаемости вашего кода. Если точнее — речь пойдет об основных правилах организации отступов. Они сильно влияют на общую функциональность кода и, если всё сделано верно, позволяют легко вносить изменения в любую его часть. При этом другие части кода продолжат нормально работать.
-        </p>
-        <p class="intro__text">
-          В этой статье я рассмотрю самые популярные "стандартные" решения для сохранения смысла и хорошей читаемости вашего кода. Если точнее — речь пойдет об основных правилах организации отступов. Они сильно влияют на общую функциональность кода и, если всё сделано верно, позволяют легко вносить изменения в любую его часть. При этом другие части кода продолжат нормально работать.
-        </p>
-      </div>
-    </section>
+  <article class="article">
+
+    <div class="container">
+      <h1 class="article__title">Отступы в вёрстке: margin и padding</h1>
+      <p class="article__text">
+        В этой статье я рассмотрю самые популярные "стандартные" решения для сохранения смысла и хорошей читаемости вашего кода. Если точнее — речь пойдет об основных правилах организации отступов. Они сильно влияют на общую функциональность кода и, если всё сделано верно, позволяют легко вносить изменения в любую его часть. При этом другие части кода продолжат нормально работать.
+      </p>
+      <p class="article__text">
+        В этой статье я рассмотрю самые популярные "стандартные" решения для сохранения смысла и хорошей читаемости вашего кода. Если точнее — речь пойдет об основных правилах организации отступов. Они сильно влияют на общую функциональность кода и, если всё сделано верно, позволяют легко вносить изменения в любую его часть. При этом другие части кода продолжат нормально работать.
+      </p>
+    </div>
 
     <section class="structure">
-      <div class="box">
-        <h2 class="structure__subtitle">Содержание:</h2>
-        <ol class="structure__list">
-          <li class="structure__item">
-            <a class="structure__link" href="#rule1">Отступ задается от предыдущего элемента к следующему</a>
-          </li>
-          <li class="structure__item">
-            <a class="structure__link" href="#rule2">Отступ задается последнему возможному элементу в DOM-дереве</a>
-          </li>
-          <li class="structure__item">
-            <a class="structure__link" href="#rule3">Для последнего элемента группы отступ обнуляется</a>
-          </li>
-        </ol>
+      <div class="container container_max-width_1200">
+        <div class="box">
+          <h2 class="structure__subtitle">Содержание:</h2>
+          <ul class="structure__list">
+            <li class="structure__item">
+              <a class="structure__link" href="#rule1">Отступ задается от предыдущего элемента к следующему</a>
+            </li>
+            <li class="structure__item">
+              <a class="structure__link" href="#rule2">Отступ задается последнему возможному элементу в DOM-дереве</a>
+            </li>
+            <li class="structure__item">
+              <a class="structure__link" href="#rule3">Для последнего элемента группы отступ обнуляется</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <section class="rule-1" id="rule1">
+    <section class="rule-one" id="rule1">
       <div class="container">
-        <h2 class="rule-1__subtitle">Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо.</h2>
-        <figure class="rule-1__image">
-          <img src="img/cats.png" alt="Пример отступов на картинках с кошками" width="560px" height="415px">
-        </figure>
-        <div class="rule-1__box">
-          <p class="rule-1__text">
-            <b>ВАЖНО:</b> <em>margin</em> всегда задают от предыдущего элемента к следующему.
-          </p>
-          <p class="rule-1__text">
-            Свойство <em>margin</em> необходимо только для того, чтобы отодвинуть своего соседа справа или снизу, поэтому используется <em>margin-right</em> и <em>margin-bottom</em> .
-          </p>
-          <p class="rule-1__text">
-            (!) Свойства <em>margin-left</em> и <em>margin-top</em> используются крайне редко.
-          </p>
-          <p class="rule-1__text">
-            Для <em>padding</em> верно обратное. Исключением является его применения в декоративных целях, например, для увеличения области ссылки.
-          </p>
+        <h2 class="rule-one__subtitle">Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо.</h2>
+        <div class="rule-one__box">
+          <img class="rule-one__img" src="img/cats.png" alt="Пример отступов на картинках с кошками" width="560px" height="415px">
+          <div class="rule-one__box-margin">
+            <p class="rule-one__text">
+              <b>ВАЖНО:</b> <em>margin</em> всегда задают от предыдущего элемента к следующему.
+            </p>
+            <p class="rule-one__text">
+              Свойство <em>margin</em> необходимо только для того, чтобы отодвинуть своего соседа справа или снизу, поэтому используется <em>margin-right</em> и <em>margin-bottom</em> .
+            </p>
+            <p class="rule-one__text">
+              (!) Свойства <em>margin-left</em> и <em>margin-top</em> используются крайне редко.
+            </p>
+            <p class="rule-one__text">
+              Для <em>padding</em> верно обратное. Исключением является его применения в декоративных целях, например, для увеличения области ссылки.
+            </p>
+          </div>
         </div>
 
-        <div class="rule-1__box-sd">
-          <p class="rule-1__text">
-            Отступ внутри блока сверху или слева реализуется через <em>padding-top</em> и <em>padding-left</em> родителя.
-          </p>
-          <p class="rule-1__text">
-            Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент не будет толкать сам себя.
-          </p>
-          <p class="rule-1__text">
-            Изначально элемент статичен, а его положение может меняться только под воздействием свойств других блоков или свойств родителя.
-          </p>
+        <div class="rule-one__box">
+          <div class="rule-one__box-padding">
+            <p class="rule-one__text">
+              Отступ внутри блока сверху или слева реализуется через <em>padding-top</em> и <em>padding-left</em> родителя.
+            </p>
+            <p class="rule-one__text">
+              Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент не будет толкать сам себя.
+            </p>
+            <p class="rule-one__text">
+              Изначально элемент статичен, а его положение может меняться только под воздействием свойств других блоков или свойств родителя.
+            </p>
+          </div>
+          <img class="rule-one__image" src="img/cat2.png" alt="Пример верхнего padding" width="560px" height="279px">
         </div>
-        <figure class="rule-1__image">
-          <img src="img/cat2.png" alt="Пример верхнего padding" width="560px" height="279px">
-        </figure>
       </div>
     </section>
 
-    <section class="rule-2" id="rule2">
+    <section class="rule-two" id="rule2">
       <div class="container">
-        <h2 class="rule-2__subtitle">Отступ задается последнему возможному элементу в DOM-дереве</h2>
-        <figure class="rule-2__image">
-          <figcaption class="rule-2__figcaption">
+        <h2 class="rule-two__subtitle">Отступ задается последнему возможному элементу в DOM-дереве</h2>
+        <figure class="rule-two__image">
+          <figcaption class="rule-two__figcaption">
             Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на этот список:
           </figcaption>
-          <img class="rule-2__img" src="img/code-list.png" alt="Пример кода с margin" width="1080px" height="537px">
+          <img class="rule-two__img" src="img/code-list.png" alt="Пример кода с margin" width="1080px" height="537px">
         </figure>
 
-        <figure class="rule-2__image">
-          <img class="rule-2__img" src="img/image-list.png" alt="Список рецептов" width="600px" height="450px">
+        <figure class="rule-two__image">
+          <img class="rule-two__img" src="img/image-list.png" alt="Список рецептов" width="600px" height="450px">
         </figure>
 
-        <figure class="rule-2__image-recipes">
-          <figcaption class="rule-2__figcaption">
+        <figure class="rule-two__image-recipes">
+          <figcaption class="rule-two__figcaption">
             Отступ делают за счёт соседних элементов, а не дочерних:
           </figcaption>
-          <img class="rule-2__img-recipes" src="img/rule2-recipes.png" alt="Пример с рецептами" width="1080px" height="427px">
+          <img class="rule-two__img-recipes" src="img/rule2-recipes.png" alt="Пример с рецептами" width="1080px" height="427px">
         </figure>
 
-        <p class="rule-2__text-note">
+        <p class="rule-two__text-note">
           <b>ВАЖНО:</b> здесь <em>.list-item</em> — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.
         </p>
 
-        <p class="rule-2__text">
+        <p class="rule-two__text">
           Казалось бы, можно задать отступ параграфу <em>&lt;p&gt;</em>, либо обёртке <em>&lt;article&gt;</em> для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.
         </p>
 
-        <figure class="rule-2__image">
-          <figcaption class="rule-2__figcaption">
+        <figure class="rule-two__image">
+          <figcaption class="rule-two__figcaption">
             Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.
           </figcaption>
-          <img class="rule-2__img" src="img/rule2img-code.png" alt="Пример кода" width="964px" height="164px">
+          <img class="rule-two__img" src="img/rule2img-code.png" alt="Пример кода" width="964px" height="164px">
         </figure>
 
-        <figure class="rule-2__image">
-          <figcaption class="rule-2__figcaption">
+        <figure class="rule-two__image">
+          <figcaption class="rule-two__figcaption">
             В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <em>section</em>. Именно для него задается <em>padding-top</em>, а не <em>div</em> с классом <em>container</em>. Свойства <em>margin</em>, которые стоят по умолчанию необходимо обнулить.
           </figcaption>
-          <img class="rule-2__img" src="img/rule2img-title.png" alt="Пример кода" width="1022px" height="504px">
+          <img class="rule-two__img" src="img/rule2img-title.png" alt="Пример кода" width="1022px" height="504px">
         </figure>
 
-        <p class="rule-2__text">
+        <p class="rule-two__text">
           Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет верстать после вас. Кроме того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки с нестандартной структурой отступов.
         </p>
       </div>
     </section>
 
-    <section class="rule-3" id="rule3">
+    <section class="rule-three" id="rule3">
       <div class="container">
-        <h2 class="rule-3__subtitle">
+        <h2 class="rule-three__subtitle">
           Для последнего элемента группы отступ всегда обнуляется
         </h2>
 
-        <p class="rule-3__text">
+        <p class="rule-three__text">
           Для наглядности возьмём наш предыдущий пример с рецептами
         </p>
 
-        <figure class="rule-3__image">
-          <figcaption class="rule-3__figcaption">
+        <figure class="rule-three__image">
+          <figcaption class="rule-three__figcaption">
             Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.
           </figcaption>
-          <img class="rule-3__img" src="img/rule3-recipes.png" alt="Пример с рецептами" width="600px" height="600px">
+          <img class="rule-three__img" src="img/rule3-recipes.png" alt="Пример с рецептами" width="600px" height="600px">
         </figure>
 
-        <figure class="rule-3__image">
-          <figcaption class="rule-3__figcaption">
+        <figure class="rule-three__image">
+          <figcaption class="rule-three__figcaption">
             В соответствии со вторым принципом: последний <em>margin</em> обнуляется, а нижний отступ задаётся через <em>padding</em> для <em>section</em>. Я чаще всего задаю <em>padding</em> для секции с обоих сторон, если расстояние между секциями 100px задаю секциям <em>padding-top:50px</em> и <em>padding-bottom:50px</em>.
           </figcaption>
-          <img class="rule-3__img" src="img/rule3recipes2.png" alt="Пример с рецептами" width="600px" height="607px">
+          <img class="rule-three__img" src="img/rule3recipes2.png" alt="Пример с рецептами" width="600px" height="607px">
         </figure>
 
-        <figure class="rule-3__image">
-          <img class="rule-3__img" src="img/rule3recipes-code1.png" alt="Пример кода" width="1080px" height="528px">
+        <figure class="rule-three__image">
+          <img class="rule-three__img" src="img/rule3recipes-code1.png" alt="Пример кода" width="1080px" height="528px">
           <img src="img/rule3recipes-code2.png" alt="Пример кода" width="1080px" height="530px">
         </figure>
 
-        <figure class="rule-3__image">
-          <figcaption class="rule-3__figcaption">
+        <figure class="rule-three__image">
+          <figcaption class="rule-three__figcaption">
             Для большего понимания рассмотрим другой пример, который часто встречается на практике:
           </figcaption>
-          <img class="rule-3__img" src="img/header.png" alt="Header MethEd" width="1080px" height="88px">
+          <img class="rule-three__img" src="img/header.png" alt="Header MethEd" width="1080px" height="88px">
         </figure>
 
-        <figure class="rule-3__image">
-          <img class="rule-3__img" src="img/rule3codeheader.png" alt="Пример кода header" width="806px" height="475px">
+        <figure class="rule-three__image">
+          <img class="rule-three__img" src="img/rule3codeheader.png" alt="Пример кода header" width="806px" height="475px">
         </figure>
 
-        <figure class="rule-3__image">
-          <figcaption class="rule-3__figcaption">
+        <figure class="rule-three__image">
+          <figcaption class="rule-three__figcaption">
             Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню задаются так:
           </figcaption>
-          <img class="rule-3__img" src="img/rule3margin-img.png" alt="Пример кода - отступ" width="317px" height="110px">
+          <img class="rule-three__img" src="img/rule3margin-img.png" alt="Пример кода - отступ" width="317px" height="110px">
         </figure>
 
-        <figure class="rule-3__image">
-          <figcaption class="rule-3__figcaption">
+        <figure class="rule-three__image">
+          <figcaption class="rule-three__figcaption">
             Советую использовать псевдоклассы :last-child чаще других, например так:
           </figcaption>
-          <img class="rule-3__img" src="img/rule3-last-child.png" alt="Пример кода - last-child" width="500px" height="383px">
+          <img class="rule-three__img" src="img/rule3-last-child.png" alt="Пример кода - last-child" width="500px" height="383px">
         </figure>
       </div>
     </section>
 
     <section class="result">
-      <div class="box">
-        <h2 class="result__subtitle">Подытожим:</h2>
-        <ul class="result__list">
-          <li class="result__item">
-            отступы задаём от предыдущего элемента к следующему
-          </li>
-          <li class="result__item">
-            используем только margin-right и margin-bottom
-          </li>
-          <li class="result__item">
-            внешние отступы задаются только между соседями
-          </li>
-          <li class="result__item">
-            внутренний отступ задаём самому верхнему элементу в дом дереве
-          </li>
-          <li class="result__item">
-            последнему элементу группы отступ всегда обнуляем
-          </li>
-        </ul>
-        <p class="result__text">
-          Конечно бывают исключения. Ведь макеты бывают различной сложности. Иногда базовые принципы приходится нарушать в угоду дизайнерского решения или простоты вёрстки. Но для этого эти принципы необходимо хорошо знать.
-        </p>
+      <div class="container container_max-width_1200">
+        <div class="box">
+          <h2 class="result__subtitle">Подытожим:</h2>
+          <ul class="result__list">
+            <li class="result__item">
+              отступы задаём от предыдущего элемента к следующему
+            </li>
+            <li class="result__item">
+              используем только margin-right и margin-bottom
+            </li>
+            <li class="result__item">
+              внешние отступы задаются только между соседями
+            </li>
+            <li class="result__item">
+              внутренний отступ задаём самому верхнему элементу в дом дереве
+            </li>
+            <li class="result__item">
+              последнему элементу группы отступ всегда обнуляем
+            </li>
+          </ul>
+          <p class="result__text">
+            Конечно бывают исключения. Ведь макеты бывают различной сложности. Иногда базовые принципы приходится нарушать в угоду дизайнерского решения или простоты вёрстки. Но для этого эти принципы необходимо хорошо знать.
+          </p>
+        </div>
       </div>
     </section>
   </article>

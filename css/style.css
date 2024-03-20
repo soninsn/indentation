@@ -1,10 +1,10 @@
 @import url(normalize.css);
 @import url(global.css);
-@import url(intro.css);
+@import url(article.css);
 @import url(structure.css);
-@import url(rule-1.css);
-@import url(rule-2.css);
-@import url(rule-3.css);
+@import url(rule-one.css);
+@import url(rule-two.css);
+@import url(rule-three.css);
 @import url(result.css);
 
 @font-face {
